@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Registration Form</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+	
+	<a href="index.html">main</a>
+		<form action="test.php" method="GET">
+
+	     <p>Please fill in the following information:</p>
+                        
+                        <label for="firstname">First name:</label> 
+                        <input type="text" id="firstname" name="firstname" >
+                        <br>
+                        
+                        <label for="lastname">Last name:</label>
+                        <input type="text" id="lastname" name="lastname" 
+                                    size="40">
+                        <br>
+                        
+                        <label for="age">Age:</label>
+                        <input type="text" id="age" name="age" required>
+                        <br>
+                         </br>
+	        
+			
+		    Please select each of the city that you live. <br>
+		    <input type="checkbox" name="item_istanbul" value="istanbul">İstanbul <br> <!-- or items[0] or items[]-->
+		    <input type="checkbox" name="item_izmir" value="izmir">İzmir <br> 
+		    <input type="checkbox" name="item_eskişehir" value="eskişehir">Eskişehir <br> <br>
+			
+		    Please select your gender <br>
+		    <input type="radio" name="iq" value="female"> female <br>
+		    <input type="radio" name="iq" value="male" checked> male <br>
+		   </br>
+			 <p>Please enter about yourself </p>
+	        <textarea rows="3" cols="60" name="about yourself" >
+	        	Please enter your information
+	        </textarea>
+			<br>
+			
+			<p>Select the photo you want to upload</p>
+			    <input type="file" name="fileToUpload">
+			    <br>
+				<br>
+
+				 <label for="age">Your age:</label>
+            <input type="number" min="0" max="99" step="1"  id="age" name="age" required><br>
+            
+            <label for="birthday">Your birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            
+            
+            <label for="color">Your favorite color:</label>
+            <input type="color" id="color" name="color"> <br>
+            
+           
+            <label for="email">Your E-mail:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="usrtel">Your Telephone:</label>
+            <input type="tel" id="usrtel" name="usrtel"><br>
+
+        
+            <input type="submit" value="Submit!">	
+			
+			<form action="test.php" method="post">
+    		<p>What is the secret password?</p>
+    		<input type="password" name="userpassword"> <br>	
+
+
+			<label for="mood">Please select like of my website :</label>
+            Bad <input type="range" min="0" max="100" step="5" value="50" id="mood" name="mood"> Good <br>
+			
+             <p>Please enter any feedback you have.</p>
+	        <textarea rows="3" cols="60" name="feedback" >
+	        	Please enter your text here
+	        </textarea>
+			<a href= 'thanks.html' > <input type = 'button' value = 'submit' name= 'submit'></a> 
+	        <br>
+			
+		</form>	
+	</body>
+</html>
